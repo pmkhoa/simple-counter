@@ -1,0 +1,43 @@
+.button, .button:visited {
+  border: none;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  font-family: $arvil;
+  font-size: 1.7em;
+  padding: 15px 28px;
+  margin: 40px 0;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 300;
+
+  text-decoration: none;
+  line-height: 21px;
+  text-shadow: none;
+  @include border-radius(3px);
+  @include css-gradient(#333333, darken(#333333, 5%));
+
+  &:hover, &:focus {
+    color: $lightestGray;
+    @include css-gradient( darken(#333333, 2%), darken(#333333, 2%) );
+  }
+  &:active {
+    @include css-gradient( darken(#333333, 5%), #333333 );
+  }
+}
+
+.black-button, .black-button:visited {
+  @include css-gradient(#333333, darken(#333333, 5%));
+  border: none;
+  color: white;
+  text-shadow: none;
+  box-shadow: none;
+  &:hover, &:focus {
+    color: white;
+    @include css-gradient( darken(#333333, 2%), darken(#333333, 2%) );
+  }
+  &:active {
+    @include css-gradient( darken(#333333, 5%), #333333 );
+  }
+}

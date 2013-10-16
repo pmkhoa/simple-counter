@@ -1,0 +1,131 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: 'Titillium Web';
+  font-size: 100%;
+  line-height: 1.8;
+  font-weight: 300;
+  position: relative;
+  color: $gray;
+
+}
+#container {
+
+}
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a, input, button {
+    -ms-touch-action: none !important;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 96%;
+	margin: 0 auto;
+}
+
+ul {
+	margin: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+.yellow {
+  color: $yellow;
+}
+.gray {
+  color: $gray;
+}
+
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+/* HEADINGS / TYPOGRAPHY */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: $arvil;
+  font-weight:  400;
+  //margin: 0 0 10px 0;
+  /*
+  if you're going to use webfonts, be sure to check your weights
+  http://css-tricks.com/watch-your-font-weight/
+  */
+
+  /* removing text decoration from all headline links */
+  a {
+    text-decoration: none;
+  }
+}
+
+h1, .h1 {
+	font-size: 3.125em;
+	line-height: 1.333em;
+}
+
+h2, .h2 {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.2em;
+}
+
+h4, .h4 {
+	font-size: 1em;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+p {
+  font-size: 16px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.notice-empty-input, .notice-email-duplicate-input {
+  display: none;
+}
+
+.counter-form {
+  input {
+    padding : 8px;
+  }
+  input.submit-counter {
+    padding: 9px 25px;
+    font-size: 1.2em;
+    margin-left: 20px;
+  }
+}
+
